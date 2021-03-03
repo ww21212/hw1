@@ -38,17 +38,17 @@ for target in targets:                                                          
       if float(pres_value) != -99 and float(pres_value) != -999:
          num += 1
          pres_total += float(pres_value)
-         pres_mean = pres_total / num
+         #pres_mean = pres_total / num
    if num != 0:
+      pres_mean = pres_total / num
       result.append([target,round(pres_mean, 1)])
    else:
       result.append([target,"None"])
-
-print(result)
 #=======================================
 
 # Part. 4
 #=======================================
 # Print result
+print(result)
 # print(target_data)
 #========================================
